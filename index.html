@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer namorar comigo?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quer namorar comigo piratinha?</h1>
+        
+        <div class="photos">
+            <img src="images/foto1.jpg" alt="Foto dela 1">
+            <img src="images/foto2.jpg" alt="Foto dela 2">
+            <img src="images/foto3.jpg" alt="Foto dela 3">
+        </div>
+
+        <p class="message">Desde que te conheci, minha vida ficou mais especial e colorida. Sinto que quero estar ao seu lado em todos os momentos e fazer você sorrir todos os dias. <strong>Quer ser minha namorada?</strong></p>
+        
+        <button class="yes-button" onclick="showMessage()">Sim, eu aceito!</button>
+
+        <!-- Mensagem que aparece ao clicar no botão -->
+        <p id="special-message" class="special-message" style="display: none;">
+            ❤️ Você me fez a pessoa mais feliz do mundo minha princesa! TEAMOOOOOOOO ❤️
+        </p>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById("special-message");
+            message.style.display = "block";
+            message.classList.add("show-animation");
+        }
+    </script>
+</body>
+</html>
